@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TMAC</title>
+	<title>TMAC - Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
 	<!-- StyleSheet -->
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<!-- jQuery -->
@@ -14,42 +14,52 @@
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700i" rel="stylesheet">
 </head>
-<body>
+<body class="home-body">
 	<header class="header" id="header">
 		<div class="h-rectangle-1" id="header-box">
 			<div class="logo-div">
-				<img class='logo' id="logo" src="./assets/TMAC-logo.png">
+				<a href="/tmac/""><img class='logo' id="logo" src="./assets/TMAC-logo.png"></a>
 			</div>
-			<h2 class="title" id="title">Tamilnadu Multicultural Association of Canada</h2>
+			<h2 class="title" id="title" >Tamilnadu Multicultural Association of Canada</h2>
 			<div class="btn-group" id="btn-group">
-				<button>About Us</button>
+				<button onclick="location.href='./about/';">About Us</button>
 				<div class="dropdown">
-					<button class="dropbtn">Services</button>
+					<button class="dropbtn" onclick="location.href='./services/';">Services</button>
 					<div class="dropdown-content">
-						<a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> <a href="#">Link 4</a> <a href="#">Link 5</a> <a href="#">Link 6</a>
+						<a href="./services/newcomers.html">Newcomers</a>
+						<a href="./services/cultural.html">Cultural</a>
+						<a href="./services/sports.html">Sports</a>
+						<a href="./services/youth.html">Youth</a> 
+						<a href="./services/women.html">Women</a>   
+						<a href="./services/senior.html">Seniors</a>
+						<a href="./services/business.html">Business</a>
 					</div>
 				</div>
-				<button>Membership</button> 
-				<button>Events</button> 
-				<button>Gallery</button> 
-				<button>Contact</button>
+				<button onclick="location.href='./membership/';">Membership</button> 
+				<button onclick="location.href='./events/';">Events</button> 
+				<button onclick="location.href='./gallery/';">Gallery</button> 
+				<button onclick="location.href='./contact/';">Contact</button>
 
 			</div>
 			<img class="menu-btn" id="menu-btn" src="./assets/icons/menu.png">
 		</div>
 		<div class="h-rectangle-2"></div>
 	</header>
+
 	<div class="banner">
-	<div class="banner-text" id="banner-text">
-		<div id="titles">
-			<h1>Subtitle Heading</h1>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+		<div class="banner-text" id="banner-text">
+			<div id="titles">
+				<h1>Subtitle Heading</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+			</div>
+			<div class="learn-more" id="learn-more">
+				<button id="learn-btn">Learn More</button>
+			</div>
 		</div>
-		<div class="learn-more" id="learn-more">
-			<button id="learn-btn">Learn More</button>
-		</div>
-	</div><img src="./assets/images/placeholder.jpg"></div>
-	<div class="about" id="about">
+		<img src="./assets/images/placeholder.jpg">
+	</div>
+	
+	<div class="description" id="des">
 		<div class="text-body">
 			<h2>Who are we?</h2>
 			<hr>
@@ -57,9 +67,10 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus malesuada dui, eget dapibus nunc varius in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui neque, posuere non elit eu, luctus ultrices nisi. Donec eget sagittis ante. Curabitur ullamcorper mollis dui in pretium.</p>
 		</div>
 	</div>
-	<div class="event" id="event">
-		<div class="event-right"><img src="./assets/images/TMAC-Picnic2018-flyerV3.jpg"></div>
-		<div class="event-left">
+
+	<div class="upcoming-event" id="upcoming-event">
+		<div class="event-right right"><img src="./assets/images/TMAC-Picnic2018-flyerV3.jpg"></div>
+		<div class="event-left left">
 			<h2><u>UP</u>COMING EVENT</h2>
 			<div class="event-text">
 				<!-- EDIT EVENT TAGLINE HERE -->
@@ -78,27 +89,27 @@
 		<h2>Get Involved with TMAC!</h2>
 		<div class="options">
 			<div id="o1">
-				<img src="./assets/icons/network.png">
+				<a href="./about/index.html"><img src="./assets/icons/network.png"></a>
 				<p><span>About Us</span></p>
 				<p class="subtitle">Learn more about TMAC and our team!</p>
 			</div>
 			<div id="o2">
-				<img src="./assets/icons/agreement.png">
+				<a href="./services/index.html"><img src="./assets/icons/agreement.png"></a>
 				<p><span>Services</span></p>
 				<p class="subtitle">Find out about the different services we offer</p>
 			</div>
 			<div id="o3">
-				<img src="./assets/icons/weekly-calendar.png">
+				<a href="./events/index.html"><img src="./assets/icons/weekly-calendar.png"></a>
 				<p><span>Events</span></p>
 				<p class="subtitle">Keep up with the exciting new events!</p>
 			</div>
 			<div id="o4">
-				<img src="./assets/icons/gallery.png">
+				<a href="./gallery/index.html"><img src="./assets/icons/gallery.png"></a>
 				<p><span>Gallery</span></p>
 				<p class="subtitle">A picture is worth a thousand words...</p>
 			</div>
 			<div id="o5">
-				<img src="./assets/icons/origami.png">
+				<a href="./contact/index.html"><img src="./assets/icons/origami.png"></a>
 				<p><span>Contact</span></p>
 				<p class="subtitle">Get in touch with us!</p>
 			</div>
@@ -109,14 +120,18 @@
 		<h2>Local Business?</h2>
 		<p>Contact <span>info@tnmac</span> to sign up to place an advert on this site!</p>
 	</div><img src="./assets/images/business.jpg"></div>
-	<footer>
-		<div class="f-rectangle-1"></div>
-		<div class="f-rectangle-2">
-			<img src="./assets/TMAC-logo.png">
-			<div id="icon-credit">
-				Copyright © TMAC 2018<br>
-				Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a>
+
+	<footer class="footer">
+		<div class="footer-text">
+			<h3>CONTACT US</h3>
+			<p>info@tmac.ca | 
+			416-111-2222</p>
+			<div>
+				<img src="./assets/icons/facebook-logo.png">
+				<img src="./assets/icons/instagram-logo.png">
+				<img src="./assets/icons/twitter-logo.png">
 			</div>
+			<p id="copyright">Copyright © TMAC 2018</p>
 		</div>
 	</footer>
 </body>
