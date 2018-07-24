@@ -78,6 +78,9 @@ button, a, li {
 	float: left;
 	display: inline-flex;
 }
+.logo-div a {
+	display: inline-block;
+}
 .logo {
 	height: 70%;
 	width: auto;
