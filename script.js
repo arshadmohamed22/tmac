@@ -14,18 +14,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	$("#logo").click(function() {
-		$('html, body').animate({
-			scrollTop: 0
-		}, 1000);
-	});
-	
-	var who = $("#about").offset().top - 60;
-	$("#learn-btn").click(function() {
-		$('html, body').animate({
-			scrollTop: who
-		}, 1000);
-	});
 
 	$("#menu-btn").click(function() {
 		if ($('#btn-group').hasClass("show-menu")) {
@@ -41,4 +29,42 @@ $(document).ready(function() {
     	}
 		
 	});
+	
+	var who = $("#des").offset().top - 60;
+	$("#learn-btn").click(function() {
+		$('html, body').animate({
+			scrollTop: who
+		}, 1000);
+	});
+
+	var acc = document.getElementsByClassName("accordion");
+	var popup = document.getElementById('Popup');
+	var btn = document.getElementById("register-btn");
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+	    popup.style.display = "block";
+	}
+	span.onclick = function() {
+	    popup.style.display = "none";
+	}
+	
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+  		
+  		acc[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var panel = this.nextElementSibling;
+    		if (panel.style.maxHeight){
+      			panel.style.maxHeight = null;
+      			$("#events-body").height($("#events-body").height()-200);
+    		} else {
+      			panel.style.maxHeight = panel.scrollHeight + "px";
+      			$("#events-body").height($("#events-body").height()+200);
+    		} 
+  		});
+	}
+
+
 });
