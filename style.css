@@ -80,6 +80,7 @@ button, a, li {
 }
 .logo-div a {
 	display: inline-block;
+	width: 100px;
 }
 .logo {
 	height: 70%;
