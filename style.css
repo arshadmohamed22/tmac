@@ -80,7 +80,6 @@ button, a, li {
 }
 .logo-div a {
 	display: inline-block;
-	width: 100px;
 }
 .logo {
 	height: 70%;
@@ -229,6 +228,12 @@ button, a, li {
 	margin: 3% auto;
 	width: 50%;
 	text-align: center;
+}
+.home-text-body ul {
+	text-align: left;
+}
+.home-text-body {
+	width: 60%;
 }
 /* -------------- upcoming event -------------- */
 
@@ -427,6 +432,9 @@ button, a, li {
 }
 .about-banner img {
 	margin-top: -5%;
+}
+.about-text {
+	width: 65%;
 }
 .team {
 	margin: 1% auto;
@@ -1278,5 +1286,3 @@ button, a, li {
 		margin-top: 1.82%;
 	}
 }
-
-
