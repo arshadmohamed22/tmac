@@ -3,7 +3,7 @@
 <head>
 	<title>TMAC - Contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+	<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
 	<!-- StyleSheet -->
 	<link href="../style.css" rel="stylesheet" type="text/css">
 	<!-- jQuery -->
@@ -41,7 +41,7 @@
 				<button onclick="location.href='./';">Contact</button>
 
 			</div>
-			<img class="menu-btn" id="menu-btn" src="../assets/icons/menu.png">
+			<button class="menu-btn" id="menu-btn" >&#9776;</button>
 		</div>
 		<div class="h-rectangle-2"></div>
 	</header>
@@ -56,23 +56,21 @@
 		<img src="../assets/images/contact-us.jpg">
 	</div>
 
-	<div class="service-description">
+	<div class="service-description contact-description">
 		<div class="right contact-right">
-			<form class="contact-form">
+			<form action="mailto:something@gmail.com" method="post" enctype="text/plain" class="contact-form">
 				<input type="text" name="name" placeholder="Your Name">
-				<input type="text" name="email" placeholder="Your Email">
-				<textarea placeholder="Your Message!"></textarea>
-				<button>Send!</button>
+				<input type="text" name="mail" placeholder="Your Email">
+				<textarea name="message" placeholder="Your Message!"></textarea>
+				<input type="submit" name="submit" value="Send!" class="contact-submit">
 			</form>
 		</div>
 		<div class="left contact-left">
 			<div class="contact-text sub-desc">
 				<ul>
-					<li ><img src="../assets/icons/phone.png">(416) 111-1111</li>
+					<li ><img src="../assets/icons/phone.png">(647) 869-8435</li>
 					<li ><img src="../assets/icons/envelope.png">info@tnmac.ca</li>
-					<li ><img src="../assets/icons/location.png">111 Something Rd<br>
-						A1B 2C3<br>
-						Toronto, ON</li>
+					<li ><img src="../assets/icons/facebook-logo-green.png">@tmac</li>
 				</ul>
 			</div>
 		</div>
@@ -80,14 +78,14 @@
 	<footer class="footer">
 		<div class="footer-text">
 			<h3>CONTACT US</h3>
-			<p>info@tmac.ca | 
-			416-111-2222</p>
+			<p>info@tnmac.ca | 
+			647-869-8435</p>
 			<div>
 				<img src="../assets/icons/facebook-logo.png">
 				<img src="../assets/icons/instagram-logo.png">
 				<img src="../assets/icons/twitter-logo.png">
 			</div>
-			<p id="copyright">Copyright © TMAC 2018</p>
+			<p id="copyright">Copyright © TMAC 2020</p>
 		</div>
 	</footer>
 </body>
