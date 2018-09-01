@@ -8,6 +8,7 @@ $(document).ready(function(){
 	var event7 = $("#event7").offset().top - 100;
 	var event8 = $("#event8").offset().top - 100;
 	var event9 = $("#event9").offset().top - 100;
+	var event10 = $("#event10").offset().top - 100;
 	$("#e1").click(function() {
 		$('html, body').animate({
 			scrollTop: event1
@@ -51,6 +52,11 @@ $(document).ready(function(){
 	$("#e9").click(function() {
 		$('html, body').animate({
 			scrollTop: event9
+		}, 1000);
+	});
+	$("#e10").click(function() {
+		$('html, body').animate({
+			scrollTop: event10
 		}, 1000);
 	});
 

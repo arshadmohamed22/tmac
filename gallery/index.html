@@ -3,7 +3,7 @@
 <head>
 	<title>TMAC - Gallery</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+	<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
 	<!-- StyleSheet -->
 	<link href="../style.css" rel="stylesheet" type="text/css">
 	<!-- jQuery -->
@@ -41,7 +41,7 @@
 				<button onclick="location.href='../contact/';">Contact</button>
 
 			</div>
-			<img class="menu-btn" id="menu-btn" src="../assets/icons/menu.png">
+			<button class="menu-btn" id="menu-btn" >&#9776;</button>
 		</div>
 		<div class="h-rectangle-2"></div>
 	</header>
@@ -56,18 +56,20 @@
 	</div>
 
 	<div class="gallery-description description" id="des">
-		<div class="text-body">
+		<div class="image-select">
+			<p><i>Click to go to event</i></p>
 			<ul>
+				<li id="e10">Annual Summer Picnic - 2018</li>
 				<li id="e1">Iftar - 2018</li>
-				<li id="e4">Blood Donation Drive</li>
-				<li id="e7">TMAC Annual Gala - 2017</li>
-
 				<li id="e2">Tamil Heritage Month - 2018</li>
-				<li id="e5">Syrian Families Support</li>
-				<li id="e8">Annual Summer Picnic - 2017</li>
-
 				<li id="e3">Project Ramadan - 2018</li>
+
+				<li id="e4">Blood Donation Drive</li>
+				<li id="e5">Syrian Families Support</li>
 				<li id="e6">Badminton Tournament - 2017</li>
+
+				<li id="e7">TMAC Annual Gala - 2017</li>
+				<li id="e8">Annual Summer Picnic - 2017</li>
 				<li id="e9">TMAC Annual Gala - 2016</li>
 			</ul>
 		</div>
@@ -76,6 +78,26 @@
 	<button id="top" title="Go to top">^</button>
 
 	<div class="gallery">
+		<div class="gallery-event" id="event10">
+			<h2>TMAC Annual Summer Picnic - 2018 </h2>
+			<hr>
+			<!-- Photo Grid -->
+			<div class="row"> 
+			  <div class="column">
+			    <img onclick="window.open('../assets/gallery/picnic2018/1.JPEG')" src="../assets/gallery/picnic2018/1.JPEG" style="width:100%">
+			    <img onclick="window.open('../assets/gallery/picnic2018/2.JPEG')" src="../assets/gallery/picnic2018/2.JPEG" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img onclick="window.open('../assets/gallery/picnic2018/3.JPEG')" src="../assets/gallery/picnic2018/3.JPEG" style="width:100%">
+			    <img onclick="window.open('../assets/gallery/picnic2018/4.JPEG')" src="../assets/gallery/picnic2018/4.JPEG" style="width:100%">
+			  </div>  
+			  <div class="column">
+			    <img onclick="window.open('../assets/gallery/picnic2018/5.JPEG')" src="../assets/gallery/picnic2018/5.JPEG" style="width:100%">
+			    <img onclick="window.open('../assets/gallery/picnic2018/6.JPEG')" src="../assets/gallery/picnic2018/6.JPEG" style="width:100%">
+			  </div>
+			</div>
+			<a class="event-title" href='https://photos.app.goo.gl/m5DosyAwbP9Eb7367' style="text-decoration: none">View More</a>
+		</div>
 		<div class="gallery-event" id="event1">
 			<h2>TMAC Iftar - 2018 </h2>
 			<hr>
@@ -261,14 +283,14 @@
 	<footer class="footer">
 		<div class="footer-text">
 			<h3>CONTACT US</h3>
-			<p>info@tmac.ca | 
-			416-111-2222</p>
+			<p>info@tnmac.ca | 
+			647-869-8435</p>
 			<div>
 				<img src="../assets/icons/facebook-logo.png">
 				<img src="../assets/icons/instagram-logo.png">
 				<img src="../assets/icons/twitter-logo.png">
 			</div>
-			<p id="copyright">Copyright © TMAC 2018</p>
+			<p id="copyright">Copyright © TMAC 2020</p>
 		</div>
 	</footer>
 
