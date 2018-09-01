@@ -30,7 +30,7 @@ $(document).ready(function() {
 		
 	});
 	
-	var who = $("#des").offset().top - 60;
+	var who = $("#des").offset().top - 90;
 	$("#learn-btn").click(function() {
 		$('html, body').animate({
 			scrollTop: who
@@ -38,16 +38,7 @@ $(document).ready(function() {
 	});
 
 	var acc = document.getElementsByClassName("accordion");
-	var popup = document.getElementById('Popup');
-	var btn = document.getElementById("register-btn");
-	var span = document.getElementsByClassName("close")[0];
-
-	btn.onclick = function() {
-	    popup.style.display = "block";
-	}
-	span.onclick = function() {
-	    popup.style.display = "none";
-	}
+	
 	
 	var i;
 

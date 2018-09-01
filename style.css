@@ -2,18 +2,18 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: #e8e8e8;
+	background-color: #FFFFFF;
 }
 html {
 	min-height: 100%;
    	position: relative;
 }
 .home-body {
-	height: 2300px;
+	height: 2500px;
 }
 
 h1,p,h2,button,a,li,input,textarea {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 h1 {
 	font-size: 60px;
@@ -22,8 +22,8 @@ h1 {
 }
 p {
 	font-weight: 10;
-	font-size: 17px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 22px;
 }
 h2 {
 	font-weight: 1;
@@ -32,10 +32,10 @@ h2 {
 button, a, li {
 	background-color: transparent;
 	font-weight: 10;
-	font-size: 16px;
-	line-height: 20px;
-	cursor: pointer;
+	font-size: 17px;
+	line-height: 21px;
 	outline: none;
+	text-decoration: none;
 }
 
 
@@ -48,9 +48,9 @@ button, a, li {
 	position: fixed;
 	top: 0;
 	z-index: 5;
-	-webkit-transition: height 0.2s;
+	-webkit-transition: all 0.2s;
 	/* Safari */
-	transition: height 0.2s;
+	transition: all 0.2s;
 }
 .small-header {
 	/* shrinks header when scroll down */
@@ -79,7 +79,7 @@ button, a, li {
 	display: inline-flex;
 }
 .logo-div a {
-	display: inline-block;
+	display: block;
 }
 .logo {
 	height: 70%;
@@ -178,7 +178,7 @@ button, a, li {
 	margin-top: 5%;
 	position: relative;
 	width: 100%;
-	height: 25%;
+	height: 23%;
 	overflow: hidden;
 }
 .banner img {
@@ -196,9 +196,12 @@ button, a, li {
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.6);
 }
+.home-banner .banner-text {
+	padding-top: 10%;
+}
 .learn-more {
 	position: absolute;
-	margin: 5% 40% 0 40%;
+	margin: 3% 40% 0 40%;
 	width: 20%;
 	top: 50%;
 }
@@ -219,7 +222,7 @@ button, a, li {
 
 .description {
 	width: 100%;
-	height: 12%;
+	height: 14%;
 	overflow: hidden;
 	background-color: white;
 }
@@ -232,6 +235,9 @@ button, a, li {
 .home-text-body ul {
 	text-align: left;
 }
+.home-text-body li {
+	margin-bottom: 10px;
+}
 .home-text-body {
 	width: 60%;
 }
@@ -239,7 +245,7 @@ button, a, li {
 
 .upcoming-event {
 	width: 100%;
-	height: 22%;
+	height: 20%;
 	background-color: rgba(44, 249, 123, 1);
 	position: relative;
 	overflow: hidden;
@@ -317,7 +323,7 @@ button, a, li {
 
 .get-involved {
 	width: 100%;
-	height: 18%;
+	height: 17%;
 	z-index: -1;
 	padding: 3% 0;
 	text-align: center;
@@ -360,7 +366,7 @@ button, a, li {
 
 .businesses {
 	width: 100%;
-	height: 10%;
+	height: 15%;
 	overflow: hidden;
 	background-color: white;
 	position: relative;
@@ -371,6 +377,7 @@ button, a, li {
 	z-index: 2;
 	color: white;
 	width: 100%;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 .business-text span {
@@ -403,6 +410,9 @@ button, a, li {
 	line-height: 22px;
 	text-align: center;
 }
+.footer-text p {
+	font-family: Lato;
+}
 .footer img {
 	margin: 1.5%;
 	width: 7%;
@@ -418,7 +428,7 @@ button, a, li {
 
 /* --------------------------------- ABOUT US PAGE ----------------------------------*/
 .about-us-body {
-	height: 2750px;
+	height: 4400px;
 	background-color: #f5f7fa;
 }
 .about {
@@ -428,7 +438,7 @@ button, a, li {
 	background-color: white;
 }
 .about-banner {
-	height: 17%;
+	height: 500px;
 }
 .about-banner img {
 	margin-top: -5%;
@@ -439,12 +449,13 @@ button, a, li {
 .team {
 	margin: 1% auto;
 	width: 82%;
-	height: 50%;
+	height: auto;
 	z-index: -1;
 	padding: 3% 0;
 	text-align: center;
 	overflow: hidden;
 	background-color: white;
+	padding-bottom: 5%
 }
 .team h2 {
 	font-weight: 900;
@@ -457,15 +468,24 @@ button, a, li {
 	text-align: center;
 }
 .board div {
-	margin-top: 6%;
+	margin: 6% 4% 0 4%;
 	display: block;
-	width: 50%;
+	width: 25%;
 	height: 5%;
 	float: left;
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	/* Safari */
+	transition: all 0.4s;
+}
+.board div:hover {
+	box-shadow: 0 1px 10px #AFAFAF; 
+	border-radius: 5px;
 }
 .board img {
+	margin-top: 10px;
 	height: auto;
-	width: 30%;
+	width: 50%;
 }
 .board span {
 	font-size: 30px;
@@ -473,23 +493,55 @@ button, a, li {
 	color: #A3749E;
 }
 
+.awards {
+	margin: 1% auto;
+	width: 82%;
+	height: auto;
+	z-index: -1;
+	padding: 3% 0;
+	text-align: center;
+	overflow: hidden;
+	background-color: white;
+}
+.certificates {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.certificates div {
+	display: block;
+	width: 31%;
+	height: 430px;
+	float: left;
+	border: 1px solid #dFdFdF;
+	border-radius: 5px;
+	margin: 2% 1%;
+}
+.certificates img {
+	height: auto;
+	width: 90%;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.small-award {
+	margin: 25% auto;
+}
+
 /* --------------------------------- SERVICES PAGE ----------------------------------*/
 .services-body {
-	height: 1500px;
+	height: 1850px;
 }
 .services-banner {
-	height: 20%;
+	height: 300px;
 }
-.services-banner img {
-	margin-top: -42%;
-}
+
 .services-banner-text {
 	padding-top: 7%;
 }
 .services {
 	margin: 0 auto;
 	width: 100%;
-	height: 60%;
+	height: auto;
 	border-radius: 0px;
 	box-shadow: none;
 }
@@ -498,7 +550,7 @@ button, a, li {
 	text-align: left;
 }
 .service div {
-	width: 31.3%;
+	width: 40%;
 	padding: 1%;
 	border-radius: 10px;
 	-webkit-transition: all 0.3s;
@@ -514,7 +566,8 @@ button, a, li {
 }
 .service img {
 	height: auto;
-	width: 40%;
+	margin-right: 8%; 
+	width: 30%;
 	float: left;
 }
 .service span {
@@ -530,14 +583,14 @@ button, a, li {
 }
 
 .sub-body {
-	height: 1200px;
+	height: 1300px;
 }
 .sub-banner {
 	height: 40%;
 }
 .sub-banner-text {
 	text-align: left;
-	padding: 5%;
+	padding: 8%;
 }
 .sub-banner-text h1 {
 	font-weight: 1;
@@ -546,8 +599,8 @@ button, a, li {
 .sub-text-div {
 	width: 30%;
 }
-.sub-banner img {
-	margin: 0;
+.newcomer-banner img {
+	margin-top: -300px;
 }
 .service-right {
 	border-left: 1px solid grey;
@@ -569,6 +622,7 @@ button, a, li {
 }
 .service-right li:hover {
 	color: #148A43;
+	cursor: pointer;
 }
 .service-description {
 	height: auto;
@@ -584,13 +638,16 @@ button, a, li {
 	margin-top: -60%;
 }
 .women img {
-	margin-top: -90%;
+	margin-top: -5%;
 }
 .business img {
 	margin-top: -10%;
 }
 .cultural img {
-	margin-top: -40%;
+	margin-top: -5%;
+}
+.sports-banner img {
+	margin-top: -12%;
 }
 
 /* ---------------------- Contact Us ------------------------ */
@@ -612,6 +669,7 @@ button, a, li {
 	width: 20%;
 	padding-bottom: 2%;
 	border-bottom: 1px solid grey;
+
 }
 
 .contact-left li {
@@ -619,6 +677,7 @@ button, a, li {
 	line-height: 1.2;
 	font-size: 20px;
 	cursor: auto;
+	font-family: Lato;
 }
 .contact-left li img {
 	width: 25px;
@@ -653,8 +712,9 @@ button, a, li {
 	border: 1px solid #A1A1A1;
 }
 
-.contact-right button {
+.contact-form .contact-submit {
 	color: black;
+	background-color: transparent;
 	margin: 3% 40%;
 	border-radius: 10px;
 	border: 2px solid #148A43;
@@ -663,17 +723,18 @@ button, a, li {
 	transition: border 0.4s;
 	width: 30%;
 	padding: 5px;
+	font-size: 15px;
 }
-.contact-right button:hover {
+.contact-form .contact-submit:hover {
 	border: 2px solid #DB6E27;
 }
 
 /* ----------------------- Memberships ----------------------- */
 .mem-body {
-	height: 100vh;
+	height: 600px;
 }
 .mem-banner {
-	height: 70%;
+	height: 100%;
 }
 .mem-banner img {
 	margin-top: -10%;
@@ -681,7 +742,7 @@ button, a, li {
 
 /* ------------------------ Events -------------------------- */
 .events-body {
-	height: 1900px;
+	height: 2450px;
 }
 .events-banner {
 	height: 320px;
@@ -776,52 +837,73 @@ button, a, li {
 .accordion-event-text a {
 	color: #1F2D3D;
 }
-/* ---- Popup ---- */
+
+/* Popup Window */
 .popup {
-    display: none; 
-    position: fixed;
-    z-index: 50; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 90%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-    padding: 5% 0;
+	display: none;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+	padding-left: 5%;
+	padding-right: 5%;
 }
-.popup-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 50%;
-    height: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+
+.image-popup {
+	background-color: white;
+	margin: 10% 0 0 10%;
+	height: 60%;
+	width: 30%;
+	float: left;
 }
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+
+.image-popup img {
+	width: 90%;
+	height: auto;
+	object-fit: cover;
 }
+
+.popup-info {
+	background-color: white;
+	margin: 10% 10% 0 0;
+	height: 60%;
+	width: 30%;
+	float: left;
+	font-family: 'Work Sans', sans-serif;
+	overflow-y: scroll;
+	padding: 0 5%;
+}
+
+.bg {
+	opacity: 0.3;
+}
+
+.popup-info a {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 2em;
+	color: black;
+}
+
 .close {
-    color: #aaa;
-    margin: 1% 2% 0 0;
-    float: right;
-    font-size: 35px;
-    font-weight: bold;
+	position: absolute;
+	float: right;
+	color: white;
+	font-size: 50px;
+	margin-right: 50px;
 }
+
 .close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+	color: #938E64;
+	cursor: pointer;
 }
 
 /* ------------------------ Gallery -------------------------- */
 .gallery-body {
-	height: 6700px;
+	height: 7400px; /* ADD 700px */
 }
 .gallery-banner {
 	height: 300px;
@@ -830,7 +912,7 @@ button, a, li {
 	margin-top: -10%;
 }
 .gallery-description {
-	height: 250px;
+	height: 350px;
 }
 .gallery-description ul {
 	width: 100%;
@@ -842,9 +924,18 @@ button, a, li {
 .gallery-description li {
 	float: left;
   	width: 31%;
-  	margin: 2% auto;
+  	margin: 15px auto;
   	padding: 0 1%;
   	text-align: center;
+  	font-size: 16px;
+}
+.image-select {
+	margin: 0 auto;
+	padding-top: 20px; 
+	width: 80%;
+}
+.image-select p {
+	text-align: center;
 }
 .gallery-description li:hover {
 	color: #AFAFAF;
@@ -911,378 +1002,731 @@ button, a, li {
 }
 
 /* --------------------------------- OTHER DEVICES ----------------------------------*/
-@media only screen and (max-width: 1100px) {
-	html, body {
-		height: 2200px;
-	}
-	.about-us-body {
-		height: 2200px;
-	}
+
+@media only screen and (max-width: 1024px) {
 	.header {
-		height: 12%;
-	}
-	.small-header {
-		/* shrinks header when scroll down */
-		height: 10.5%;
-	}
-	#title {
-		display: none;
-	}
-	.btn-group {
-		width: 100%;
-		height: 600%;
-		margin: -0.5% auto;
-		display: none;
-	}
-	.menu-btn {
-		margin-top: 3%;
-		width: 6.5%;
-		display: block;
-	}
-	.btn-group button {
-		background-color: white;
-		width: 100%;
-		padding: 20px 30px;
-	}
-	.dropdown {
-		display: block;
-	}
-	.dropdown-content {
-		min-width: 100%;
-	}
-	.show-menu {
-		height: 600%;
-	}
-	.banner {
-		margin-top: 8%;
-		height: 22%;
-	}
-	.about {
 		height: 15%;
 	}
-	.event {
-		height: 23%;
-	}
-	.event-left {
-		padding: 0% 0 0 0%;
-	}
-	.event-right {
-		padding-right: 17%;
-	}
-	.get-involved {
-		height: 42%;
-	}
-	.options div {
-		margin-top: 5%;
-		width: 50%;
-	}
-
-/*---- About us -----*/
-	.about {
-		height: auto;
-		margin-top: 5%;
-	}
-	.team {
-		height: auto;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	html, body {
-		height: 4000px;
-	}
 	.small-header {
-		/* shrinks header when scroll down */
-		height: 10%;
+		height: 11%;
 	}
-	.btn-group {
-		width: 100%;
-		height: 600%;
+	.header .title {
 		display: none;
 	}
-	.small-btn-group {
-		/* shrinks btn-group when scroll down */
-		margin-top: 0%;
+	.header .btn-group {
+    	margin: 4% 3.23% 0.82% 0;
 	}
-	.menu-btn {
-		margin-top: 4%;
-		width: 8%;
-		display: block;
+	.header .small-btn-group {
+    	margin-top: 3%;
 	}
-	.btn-group button {
-		background-color: white;
-		width: 100%;
-		padding: 20px 30px;
+	.header .btn-group button {
+    	font-size: 18px;
 	}
-	.dropdown {
-		display: block;
+	.home-banner {
+		margin-top: 15%;
 	}
-	.dropdown-content {
-		min-width: 100%;
+	.home-banner img {
+	    width: auto;
+	    height: 100%;
 	}
-	.show-menu {
-		height: 700%;
+	.home-banner .banner-text {
+		padding-top: 20%;
 	}
-	
-	.banner {
-		height: 15%;
+	.home-description {
+		height: 16%;
 	}
-	
-	.banner-text {
-		width: 90%;
-		padding: 30% 5% 0 5%;
-	}
-	.banner img {
-		height: 100%;
-		width: auto;
-	}
-	.learn-more button {
-		margin-top: 80%;
-		margin-left: -50%;
-		width: 100%;
-	}
-	.description {
-		height: 12%;
-	}
-	.text-body {
-		width: 55%;
-	}
-	.event {
-		height: 14%;
-	}
-	.event-right img {
-		height: 30%;
-	}
-	.event-left {
-		float: none;
-		display: block;
-	}
-	.event-right {
-		display: none;
-	}
-	.event-text {
-		height: 50%;
-		width: 80%;
-	}
-	.options div {
-		margin-top: 8%;
-		width: 100%;
-	}
-	.get-involved {
-		height: 35%;
-	}
-	.businesses {
-		margin-top: 10%;
-		height: 12%; 
-	}
-	.business-text {
-		color: #293D57;
-	}
-	.businesses img {
-		margin-top: 3%;
-		margin-left: -50%;	
-		height: 100%;
-		width: auto;
-	}
-	footer {
-		height: 12%;
-	}
-	footer img {
-		height: auto;
-		width: 20%;
-	}
-	.f-rectangle-2 {
-		padding-top: 40%;
-	}
-/* ----- About Us ----- */
-	.about-us-body {
-		height: 4000px;
-	}
-	.about-us-body h1 {
-		font-size: 40px;
-	}
+	/*--------------*/
 	.about-banner {
-		overflow: hidden;
-		height: 10%;
+		margin-top: 10%;
+		height: 400px;
 	}
-	.about-banner img {
-		margin-top: 5%;
+	.about-us-body {
+		height: 3900px;
 	}
-	.about-text {
-		width: 80%;
+	.certificates div {
+		height: 400px;
 	}
-	
-	footer {
-		margin-top: 15%;
-	}
-	.team {
-		margin-top: 8%;
-	}
-	.board div {
-		margin-top: 15%;
-		width: 100%;
-	}
-	.subtitle {
-		width: 70%;
-	}
-/* ----- Services ----- */
-	
+	/*----------*/
 	.services-body {
-		height: 2000px;
+    	height: 1550px;
 	}
 	.services-banner {
-		height: 25%;
+		margin-top: 15%;
+    	height: 300px;
 	}
-	.services-banner img {
-		margin-top: 0%;
+	/*--*/
+	.sub-body {
+    	height: 1350px;
 	}
-	.services {
-		margin: 0 auto;
+	.sub-banner {
+		margin-top: 15%;
+    	height: 450px;
 	}
-	.service-left {
-		width: 100%;
+	.newcomer-banner img {
+	    margin-top: -200px;
+	}
+	/*--------*/
+	.mem-banner .banner-text {
+		padding-top: 25%;
+	}
+	/*--------*/
+	.events-banner {
+   		margin-top: 15%;
+	}
+	/*--------*/
+	.gallery-body {
+	    height: 6100px;
+	}
+	.gallery-banner {
+		margin-top: 15%;
+	}
+	.gallery-description {
+    	height: 350px;
+	}
+	/*-------*/
+	.contact-banner {
+    	margin-top: 15%;
+	}
+	.contact-left ul {
+	    margin-left: 5%;
+    	width: 30%;
+    }
+}
+@media only screen and (max-width: 800px) {
+	.header .logo {
+		margin-top: 15px;
+	}
+	.header .btn-group {
+    	display: none;
+  	}
+  	.dropdown:hover .dropdown-content {
+		display: none;
+	}
+	.header .menu-btn {
+		margin-top: 7%;
+		font-size: 40px;
+		text-decoration: none;
+		color: #5F5F5F;
+	    float: right;
+	    display: block;
+	    border: none;
+	    -webkit-transition: all 0.2s;
+		/* Safari */
+		transition: all 0.2s;
+	}
+	.small-header .menu-btn {
+		margin-top: 5%;
+		font-size: 35px;
+	}
+	.show-menu {
 		display: block;
 	}
+	.header .btn-group {
+		margin: 0;
+		width: 100%;
+		background-color: white;
+	}
+	.header .btn-group .dropdown{
+		width: 100%;
+	}
+	.header .btn-group button {
+		width: 100%;
+		float: none;
+    	display: block;
+    	text-align: center;
+    	background-color: #EFEFEF;
+    	margin: 0;
+    	font-size: 20px;
+    	height: 100px;
+	}
+	.header .btn-group button:hover {
+		background-color: white;
+	}
+	.home-banner {
+		height: 20%;
+	}
+	.upcoming-event {
+		height: 21%;
+	}
+	.event-left {
+		margin-left: 4%;
+		padding: 0;
+	}
+	.event-right {
+		height: 80%;
+		margin: 4% 8% 0 0;
+		padding-right: 10%;
+	}
+	.businesses {
+		height: 12%;
+	}
+	.footer {
+		height: 320px;
+	}
+	.footer-text {
+		width: 50%;
+	}
+	/*-----------*/
+	.about-us-body {
+		height: 5500px;
+	}
+	.board div {
+		width: 40%;
+	}
+	.certificates div {
+		width: 45%;
+		height: 400px;
+		overflow: hidden;
+	}
+	/*--*/
+	.sub-body {
+	    height: 1500px;
+	}
+	.sub-banner {
+    	height: 420px;
+	}
+	.newcomer-banner img {
+	    margin-top: -80px;
+	}
+	.cultural img {
+   	 margin-top: 5%;
+	}
+	/*-----*/
+	.events-banner {
+   		height: 280px;
+	}
+	.events-description {
+    	height: 300px;
+	}
+	.month {
+    	width: 100%;
+	}
+	/*--------*/
+	
+	.gallery-body {
+    	height: 5100px;
+	}
+	/*------*/
+	.contact-banner {
+    	height: 350px;
+	}
+	.contact-description {
+		height: 400px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	h1 {
+	font-size: 60px;
+	line-height: 65px;
+}
+p {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+button, a, li {
+	font-size: 20px;
+	line-height: 25px;
+}
+	.home-body {
+		height: 5000px;
+	}
+	.logo {
+		margin-top: 20px;
+		height: 60%;
+	}
+	.header {
+		height: 15%;
+	}
+	.small-header {
+		height: 13%;
+	}
+	.header .menu-btn {
+		margin-top: 10%;
+		margin-left: 80%;
+	}
+	.home-banner {
+		height: 12%;
+	}
+	.home-banner .banner-text {
+    	padding-top: 30%;
+	}
+	.home-banner img {
+    	width: auto;
+   		height: 100%;
+	}
+	.learn-more {
+		margin: 3% 30% 0 30%;
+		width: 40%;
+	}
+	.home-description {
+		height: 10%;
+	}
+	.home-text-body {
+		width: 90%;
+	}
+	.home-text-body li {
+    	margin-bottom: 25px;
+	}
+	.get-involved {
+		height: 40%;
+	}
+	.get-involved .options div {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.event-right {
+		float: none;
+		height: 50%;
+		margin: 4% 15%;
+	}
+	.event-left {
+		margin: 6% 10%;
+	}
+	.event-text {
+		width: 100%;
+	}
+	.businesses {
+		height: 10%;
+	}
+	.businesses img {
+    	width: auto;
+    	height: 100%;
+	}
+	.footer {
+		height: 360px;
+	}
+	/*------*/
+	.about-us-body {
+		height: 9700px;
+	}
+	.about-banner{
+		margin-top: 25%;
+		height: 300px;
+	}
+	.board div {
+		width: 100%;
+	}
+	.certificates div {
+		width: 100%;
+	}
+	.image-popup {
+    	background-color: white;
+    	margin: 10% 0 0 10%;
+    	height: 30%;
+    	width: 70%;
+    	float: none;
+    	/* display: block; */
+	}
+	.image-popup img {
+		margin: 0 auto;
+    	width: auto;
+    	height: 100%;
+    	object-fit: cover;
+	}
+	.popup-info {
+   		margin: 0% 10%;
+    	height: 60%;
+    	width: 60%;
+    	float: none;
+	}
+	/*------*/
+	.services-banner-text {
+    	padding-top: 20%;
+	}
+	.services-banner img {
+    	width: auto;
+    	height: 100%;
+	}
+	.services-body {
+    	height: 2500px;
+	}
+
 	.service-right {
 		display: none;
 	}
-
-
-
-	.sub-body {
-		height: 1500px;
-	}
-	.sub-banner {
-		height: 30%;
+	.sub-banner-text h1 {
+	    font-size: 50px;
 	}
 	.sub-text-div {
-		width: 80%;
+    	width: 60%;
+	}
+	.sub-desc {
+		margin: 0;
+		padding: 0 5%;
+		width: 90%;
+	}
+	.sub-banner {
+    	height: 35%;
 	}
 	.sub-banner img {
-		margin: 0;
+    	width: auto;
+    	height: 100%;
 	}
-	.service-description {
-		height: auto;
-		padding: 5%;
+	.newcomer-banner img {
+	    margin-top: 0px;
 	}
-	.service-footer {
-		margin-top: 0%;
-		height: 20%;
+	/*------*/
+	.events-description {
+    	height: 450px;
 	}
-}
-
-@media only screen and (min-width: 1680px) {
-	html, body {
-		height: 2870px;
-	}
-	h1 {
-		font-size: 75px;
-		line-height: 75px;
-	}
-	p {
-		font-size: 22px;
-		line-height: 30px;
-	}
-	h2 {
-		font-size: 40px;
-	}
-	button, a {
-		font-size: 20px;
-		line-height: 28px;
-	}
-	.title {
-		font-size: 22px;
-		margin: 3.2% 0 0 2%;
-		-webkit-transition: margin 0.2s;
-		/* Safari */
-		transition: margin 0.2s;
-	}
-	.small-title {
-		margin: 2% 0 0 0.6%;
-	}
-
-	.btn-group {
-		margin: 2.6% 3.23% 0.82% 0;
-		-webkit-transition: margin-top 0.2s;
-		/* Safari */
-		transition: margin-top 0.2s;
-	}
-	.small-btn-group {
-		/* shrinks btn-group when scroll down */
-		margin-top: 1.5%;
-	}
-}
-
-@media only screen and (min-width: 1900px) {
-	html, body {
-		height: 2950px;
-	}
-	button, a {
-		font-size: 23px;
-		line-height: 30px;
-	}
-	.title {
-		font-size: 25px;
-		margin: 3% 0 0 2%;
-		-webkit-transition: margin 0.2s;
-		/* Safari */
-		transition: margin 0.2s;
-	}
-	.small-title {
-		margin: 2% 0 0 0.6%;
-	}
-
-	.btn-group {
-
-		margin: 2.6% 3.23% 0.82% 0;
-		-webkit-transition: margin-top 0.2s;
-		/* Safari */
-		transition: margin-top 0.2s;
-	}
-	.small-btn-group {
-		/* shrinks btn-group when scroll down */
-		margin-top: 1.5%;
-	}
-}
-
-@media only screen and (min-width: 2000px) { /* Macbook Pro (2560 x 1600) screen adjustments */
-    html, body {
-		height: 4000px;
-	}
-	h1 {
-		font-size: 100px;
-		line-height: 105px;
-	}
-	p {
-		font-size: 37px;
-		line-height: 40px;
-	}
-	h2 {
-		font-size: 50px;
-	}
-	button, a {
+	.accordion div {
 		font-size: 30px;
-		line-height: 40px;
+		width: 70px;
 	}
-	.title {
-		font-size: 40px;
-		margin: 3% 0 0 2%;
-		-webkit-transition: margin 0.2s;
-		/* Safari */
-		transition: margin 0.2s;
+	.accordion {
+		font-size: 20px;
 	}
-	.small-title {
-		margin: 2% 0 0 0.6%;
+	/*------*/
+	.gallery-body {
+	    height: 23600px;
+	}
+	.gallery-description {
+    	height: 450px;
+	}
+	.gallery {
+		padding: 5% 5%;
+	}
+	.column {
+    	-ms-flex: 100%;
+    	flex: 100%;
+    	max-width: 100%;
+    	padding: 0 4px;
+	}
+}
+@media only screen and (max-width: 425px) {
+	h1 {
+	font-size: 55px;
+	line-height: 60px;
+}
+	.home-body {
+		height: 4900px;
+	}
+	.header {
+		height: 13%;
+	}
+	.header .menu-btn {
+		margin-top: 8%;
+	}
+	.small-header .menu-btn {
+		margin-top: 8%;
+    	font-size: 30px;
+	}
+	.small-header {
+		height: 11%;
+	}
+	.learn-more {
+    	margin: 15% 25% 0 25%;
+    	width: 50%;
+	}
+	.home-description {
+    	height: 12.5%;
+	}
+	.upcoming-event {
+		height: 23%;
+	}
+	.event-right {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.get-involved {
+		padding: 15% 0;
+    	height: 36%;
+	}
+	.footer-text {
+		padding-top: 15%;
+    	width: 90%;
+	} 
+	/*-------- about --------*/
+	.about-us-body {
+    	height: 9500px;
+	}
+	.about {
+		width: 100%;
+	}
+	.about-text {
+    	width: 80%;
+	}
+	.about-banner .banner-text {
+		padding-top: 20%;
+	}
+	.about-banner {
+		margin-top: 20%;
+		height: 400px;
+	}
+	.about-banner img {
+		margin-top: 0;
+		height: 400px;
+		width: auto;
+	}
+	/*-----------*/
+	.services-body p {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.services-body {
+    	height: 2000px;
+	}
+	.sub-banner {
+	    height: 30%;
+	}
+	.sub-body {
+    	height: 1800px;
+	}
+	/*----------*/
+	.events-banner img {
+	    width: auto;
+	    height: 100%;
+	}
+	.events-description .text-body {
+		width: 75%;
+	}
+	.accordion div {
+		font-size: 25px;
+		width: 70px;
+	}
+	.accordion {
+		font-size: 18px;
+	}
+	/*-------*/
+	.gallery-body {
+    	height: 17300px;
+	}
+	.gallery-description {
+    	height: 550px;
+	}
+	.gallery-banner img {
+    	width: auto;
+    	height: 100%;
+	}
+	.gallery-banner img {
+		margin-left: -15%;
+   		margin-top: 5%;
+	}
+	/*--------*/
+	.contact-body {
+    	height: 1380px;
+	}
+	.contact-banner img {
+		margin-left: -15%;
+		margin-top: 0;
+    	width: auto;
+    	height: 100%;
+	}
+	.contact-left {
+		display: block;
+	}
+	.contact-left ul {
+    	margin: 0 auto;
+    	width: 50%;
+	}
+	.contact-right {
+		float: none;
+		margin: 10% auto;
+		padding: 0;
+		width: 80%;
+		height: auto;
+	}
+	.contact-form {
+    	width: 90%;
+	}
+	.contact-description {
+    	height: 700px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	h1 {
+	font-size: 50px;
+	line-height: 55px;
+}
+	h2 {
+		font-size: 30px;
+	}
+	.home-banner {
+    height: 15%;
+}
+.home-banner .banner-text {
+    padding: 45% 5%;
+    width: 90%; 
+}
+.learn-more {
+    margin: 15% 5% 0 5%;
+    width: 80%;
+}
+	.home-description {
+    	height: 15%;
+    	padding-top: 20%;
+	}
+	.upcoming-event {
+    	height: 21%;
+	}
+	.event-right {
+    	width: 100%;
+    	height: auto;
+    	margin: 0;
+	}
+	.event-right img {
+		width: 100%;
+		height: auto;
+	}
+	.event-left {
+		margin: 10% 5%;
+	}
+	.get-involved {
+		height: 33%;
+	}
+	/*-------- about --------*/
+	.about-us-body {
+    	height: 9000px;
+	}
+	/*------*/
+	.mem-body {
+    	height: 800px;
 	}
 
-	.btn-group {
-		margin: 2.6% 3.23% 0.82% 0;
-		-webkit-transition: margin-top 0.2s;
-		/* Safari */
-		transition: margin-top 0.2s;
+	.events-description {
+    	height: 550px;
 	}
-	.small-btn-group {
-		/* shrinks btn-group when scroll down */
-		margin-top: 1.82%;
+	.accordion {
+		font-size: 14px;
+	}
+	.accordion div {
+		margin-right: 2px;
+	}
+	/*----*/
+	.gallery-body {
+    	height: 15700px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.header .title {
+		margin: 4% 0 auto 6%;
+	}
+	.header .small-title {
+		margin: 3.5% 0 auto 4%;
+	}
+	.header .btn-group {
+    	margin: 3.5% 3.23% 0.82% 0;
+	}
+	.header .small-btn-group {
+    	margin-top: 3.0%;
+	}
+	/*-------------*/
+	.about-us-body {
+		height: 4500px;
+	}
+	/*------*/
+	.services-banner {
+    	height: 400px;
+	}
+	.services-banner-text {
+    	padding-top: 13%;
+	}
+		/*--*/
+	.sub-body {
+    	height: 1200px;
+	}
+	.sub-banner {
+		height: 500px;
+	}
+	/*---------*/
+	.events-banner {
+    	height: 400px;
+	}
+	.events-body {
+    	height: 2550px;
+	}
+	/*-----------*/
+	.gallery-banner {
+    	height: 400px;
+	}
+	.gallery-body {
+    	height: 7900px;
+	}
+}
+@media only screen and (min-width: 1600px) {
+	.header .title {
+		margin: 3.5% 0 auto 4%;
+	}
+	/*-------------*/
+	.about-us-body {
+		height: 4800px;
+	}
+	/*---------*/
+	.services-body {
+    	height: 2000px;
+	}
+	.services-banner-text {
+    	padding-top: 10%;
+	}
+	/*--*/
+	.newcomer-banner img {
+    	margin-top: -400px;
+	}
+	/*---------*/
+	.events-body {
+    	height: 2650px;
+	}
+	/*-------*/
+	.gallery-body {
+    	height: 8900px;
+	}
+	/*-------*/
+	.contact-body {
+    	height: 1180px;
+	}
+
+}
+@media only screen and (min-width: 1900px) {
+	.header .small-title {
+		margin: 3% 0 auto 2%;
+	}
+	/*-------------*/
+	.about-us-body {
+		height: 5100px;
+	}
+
+	.services-body {
+    	height: 2200px;
+	}
+	/*--*/
+	.newcomer-banner img {
+    	margin-top: -550px;
+	}
+	/*---------*/
+	.events-body {
+    	height: 2750px;
+	}
+	/*--------*/
+	.gallery-body {
+	    height: 9900px;
+	}
+}
+@media only screen and (min-width: 2560px) {
+	.about-us-body {
+		height: 6100px;
+	}
+
+	.services-body {
+    	height: 2800px;
+	}
+	.services-banner {
+    	height: 500px;
+	}
+	.sub-banner {
+		height: 700px;
+	}
+	.newcomer-banner img {
+    	margin-top: -650px;
+	}
+	/*---------*/
+	.events-banner {
+    	height: 500px;
+	}
+	.events-body {
+    	height: 3200px;
 	}
 }
