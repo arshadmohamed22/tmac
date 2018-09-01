@@ -18,7 +18,7 @@
 	<header class="header" id="header">
 		<div class="h-rectangle-1" id="header-box">
 			<div class="logo-div">
-				<a href="/tmac/""><img class='logo' id="logo" src="../assets/TMAC-logo.png"></a>
+				<img onclick="location.href='/tmac/';" class='logo' id="logo" src="../assets/TMAC-logo.png">
 			</div>
 			<h2 class="title" id="title" >Tamilnadu Multicultural Association of Canada</h2>
 			<div class="btn-group" id="btn-group">
@@ -30,9 +30,10 @@
 						<a href="../services/cultural.html">Cultural</a>
 						<a href="../services/sports.html">Sports</a>
 						<a href="../services/youth.html">Youth</a> 
+						<a href="../services/business.html">Business</a>
 						<a href="../services/women.html">Women</a>   
 						<a href="../services/senior.html">Seniors</a>
-						<a href="../services/business.html">Business</a>
+						<a href="">Other</a>
 					</div>
 				</div>
 				<button onclick="location.href='../membership/';">Membership</button> 
@@ -41,7 +42,7 @@
 				<button onclick="location.href='../contact/';">Contact</button>
 
 			</div>
-			<img class="menu-btn" id="menu-btn" src="../assets/icons/menu.png">
+			<button class="menu-btn" id="menu-btn" >&#9776;</button>
 		</div>
 		<div class="h-rectangle-2"></div>
 	</header>
@@ -71,36 +72,103 @@
 
 	<div class="team" id="team">
 		<h2>Board of Directors</h2>
+		<i>Click on Member to Expand</i>
 		<div class="board">
-			<div id="o1">
+			<div id="o1" onclick="openPopup();">
 				<img src="../assets/icons/person.png">
 				<p><span>Name</span></p>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum urna faucibus, lobortis ligula quis, consequat urna.</p>
+				<p>Title</p>
 			</div>
-			<div id="o2">
+			<div id="o2" onclick="openPopup();">
 				<img src="../assets/icons/person.png">
 				<p><span>Name</span></p>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum urna faucibus, lobortis ligula quis, consequat urna.</p>
+				<p>Title</p>
 			</div>
-			<div id="o3">
+			<div id="o3" onclick="openPopup();">
 				<img src="../assets/icons/person.png">
 				<p><span>Name</span></p>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum urna faucibus, lobortis ligula quis, consequat urna.</p>
+				<p>Title</p>
 			</div>
-			<div id="o4">
+			<div id="o4" onclick="openPopup();">
 				<img src="../assets/icons/person.png">
 				<p><span>Name</span></p>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum urna faucibus, lobortis ligula quis, consequat urna.</p>
+				<p>Title</p>
 			</div>
-			<div id="o5">
+			<div id="o5" onclick="openPopup();">
 				<img src="../assets/icons/person.png">
 				<p><span>Name</span></p>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum urna faucibus, lobortis ligula quis, consequat urna.</p>
+				<p>Title</p>
 			</div>
-			<div id="o6">
+			<div id="o6" onclick="openPopup();">
 				<img src="../assets/icons/person.png">
 				<p><span>Name</span></p>
-				<p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum urna faucibus, lobortis ligula quis, consequat urna.</p>
+				<p>Title</p>
+			</div>
+			<div id="o7" onclick="openPopup();">
+				<img src="../assets/icons/person.png">
+				<p><span>Name</span></p>
+				<p>Title</p>
+			</div>
+			<div id="o8" onclick="openPopup();">
+				<img src="../assets/icons/person.png">
+				<p><span>Name</span></p>
+				<p>Title</p>
+			</div>
+			<div id="o9" onclick="openPopup();">
+				<img src="../assets/icons/person.png">
+				<p><span>Name</span></p>
+				<p>Title</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Pop up windows -->
+	<div id="Popup" class="popup">
+
+		<span id="close" class="close" onclick="closePopup();">&times;</span>
+	
+		<div id="image-popup" class="image-popup"><img src="../assets/icons/person.png"></div>
+
+		<div class="popup-info">
+			<h2>Name - Title</h2>
+			<hr>
+			<!-- EDIT DESCRIPTION HERE -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida. Egestas dui id ornare arcu odio ut sem. Non sodales neque sodales ut etiam sit. Metus vulputate eu scelerisque felis imperdiet. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Metus dictum at tempor commodo ullamcorper a lacus. Aliquam sem fringilla ut morbi. Vestibulum rhoncus est pellentesque elit. Vestibulum morbi blandit cursus risus at. Tempus quam pellentesque nec nam.
+			<br><br>
+			A diam maecenas sed enim. Odio euismod lacinia at quis risus sed. Pellentesque sit amet porttitor eget dolor morbi. Auctor elit sed vulputate mi sit amet mauris. Libero justo laoreet sit amet cursus sit amet dictum sit. Eu facilisis sed odio morbi quis commodo odio. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Lacus viverra vitae congue eu consequat ac. Non nisi est sit amet facilisis magna etiam. Pharetra sit amet aliquam id diam maecenas ultricies. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Elit eget gravida cum sociis. Et ligula ullamcorper malesuada proin. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Bibendum ut tristique et egestas quis ipsum suspendisse. In fermentum et sollicitudin ac orci phasellus egestas. Fermentum odio eu feugiat pretium nibh ipsum.</p>
+		</div>
+	
+	</div>
+
+	<div class="awards" id="awards">
+		<div class="certificates">
+			<h2>Awards & Appreciation</h2>
+			<div>
+				<img onclick="window.open('../assets/awards/1.jpeg')" src="../assets/awards/1.jpeg">
+			</div>
+			<div>
+				<img onclick="window.open('../assets/awards/2.jpeg')" src="../assets/awards/2.jpeg">
+			</div>
+			<div>
+				<img onclick="window.open('../assets/awards/4.jpeg')" src="../assets/awards/4.jpeg">
+			</div>
+			<div>
+				<img class="small-award" onclick="window.open('../assets/awards/8.jpeg')" src="../assets/awards/8.jpeg">
+			</div>
+			<div>
+				<img onclick="window.open('../assets/awards/5.jpeg')" src="../assets/awards/5.jpeg">
+			</div>
+			<div>
+				<img class="small-award" onclick="window.open('../assets/awards/9.jpeg')" src="../assets/awards/9.jpeg">
+			</div>
+			<div>
+				<img onclick="window.open('../assets/awards/3.jpeg')" src="../assets/awards/3.jpeg">
+			</div>
+			<div>
+				<img onclick="window.open('../assets/awards/6.jpeg')" src="../assets/awards/6.jpeg">
+			</div>
+			<div>
+				<img onclick="window.open('../assets/awards/7.jpeg')" src="../assets/awards/7.jpeg">
 			</div>
 		</div>
 	</div>
@@ -108,15 +176,17 @@
 	<footer class="footer">
 		<div class="footer-text">
 			<h3>CONTACT US</h3>
-			<p>info@tmac.ca | 
-			416-111-2222</p>
+			<p>info@tnmac.ca | 
+			647-869-8435</p>
 			<div>
 				<img src="../assets/icons/facebook-logo.png">
 				<img src="../assets/icons/instagram-logo.png">
 				<img src="../assets/icons/twitter-logo.png">
 			</div>
-			<p id="copyright">Copyright © TMAC 2018</p>
+			<p id="copyright">Copyright © TMAC 2020</p>
 		</div>
 	</footer>
+
+	<script defer type="text/javascript" src="./about.js"></script>
 </body>
 </html>
