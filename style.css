@@ -1535,6 +1535,15 @@ button, a, li {
     	height: 700px;
 	}
 }
+/* Horizontal Mobile Screens */
+@media handheld, (orientation: landscape) {
+	.header {
+    	height: 100px;
+	}
+	.small-header {
+    	height: 80px;
+	}
+}
 
 @media only screen and (max-width: 375px) {
 	h1 {
@@ -1600,6 +1609,9 @@ button, a, li {
     	height: 15700px;
 	}
 }
+
+
+
 
 @media only screen and (min-width: 1440px) {
 	.header .title {
