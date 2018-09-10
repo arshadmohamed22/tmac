@@ -1536,7 +1536,7 @@ button, a, li {
 	}
 }
 /* Horizontal Mobile Screens */
-@media handheld, (orientation: landscape) {
+@media only screen and (max-width: 425px) and (orientation: landscape) {
 	.header {
     	height: 100px;
 	}
@@ -1610,7 +1610,15 @@ button, a, li {
 	}
 }
 
-
+/* Horizontal Mobile Screens */
+@media only screen and (max-width: 375px) and (orientation: landscape) {
+	.header {
+    	height: 100px;
+	}
+	.small-header {
+    	height: 80px;
+	}
+}
 
 
 @media only screen and (min-width: 1440px) {
