@@ -2,16 +2,20 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: #f5f7fa;;
 }
 html {
 	min-height: 100%;
    	position: relative;
+
 }
 .home-body {
 	height: 2500px;
 }
-
+body {
+	max-width: 1600px;
+	margin: auto;
+}
 h1,p,h2,button,a,li,input,textarea {
 	font-family: 'Raleway', sans-serif;
 }
@@ -43,7 +47,7 @@ button, a, li {
 /* --------------- HEADER ------------------- */
 
 .header {
-	height: 20%;
+	height: 140px;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -51,10 +55,11 @@ button, a, li {
 	-webkit-transition: all 0.2s;
 	/* Safari */
 	transition: all 0.2s;
+	max-width: 1600px;
 }
 .small-header {
 	/* shrinks header when scroll down */
-	height: 15%;
+	height: 120px;
 }
 .h-rectangle-1 {
 	height: 91%;
@@ -87,7 +92,7 @@ button, a, li {
 	cursor: pointer;
 }
 .title {
-	margin: 3% 0 auto 3%;
+	margin: 3% 0 auto 40px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 20px;
@@ -98,7 +103,7 @@ button, a, li {
 	display: inline-flex;
 }
 .small-title {
-	margin: 2.4% 0 auto 1.5%;
+	margin: 2.4% 0 auto 35px;
 	font-size: 18px;
 }
 
@@ -175,7 +180,7 @@ button, a, li {
 /* ------------------- BANNER -------------------- */
 
 .banner {
-	margin-top: 5%;
+	margin-top: 100px;
 	position: relative;
 	width: 100%;
 	height: 23%;
@@ -393,12 +398,12 @@ button, a, li {
 .footer {
 	position: absolute;
 	bottom: 0;
-	left: 0;
 	height: 243px;
 	width: 100%;
 	background-color: #4A4A4A;
 	z-index: 3;
 	overflow: hidden;
+	max-width: 1600px;
 }
 .footer-text {
 	margin: auto;
@@ -600,7 +605,7 @@ button, a, li {
 	width: 30%;
 }
 .newcomer-banner img {
-	margin-top: -300px;
+	margin-top: -75px;
 }
 .service-right {
 	border-left: 1px solid grey;
@@ -939,6 +944,7 @@ button, a, li {
 }
 .gallery-description li:hover {
 	color: #AFAFAF;
+	cursor: pointer;
 }
 .gallery {
 	margin-top: -5%;
@@ -1002,14 +1008,7 @@ button, a, li {
 }
 
 /* --------------------------------- OTHER DEVICES ----------------------------------*/
-
-@media only screen and (max-width: 1024px) {
-	.header {
-		height: 15%;
-	}
-	.small-header {
-		height: 11%;
-	}
+@media only screen and (max-width: 1200px) {
 	.header .title {
 		display: none;
 	}
@@ -1021,9 +1020,6 @@ button, a, li {
 	}
 	.header .btn-group button {
     	font-size: 18px;
-	}
-	.home-banner {
-		margin-top: 15%;
 	}
 	.home-banner img {
 	    width: auto;
@@ -1051,19 +1047,14 @@ button, a, li {
     	height: 1550px;
 	}
 	.services-banner {
-		margin-top: 15%;
-    	height: 300px;
+		height: 300px;
 	}
 	/*--*/
 	.sub-body {
     	height: 1350px;
 	}
 	.sub-banner {
-		margin-top: 15%;
-    	height: 450px;
-	}
-	.newcomer-banner img {
-	    margin-top: -200px;
+		height: 450px;
 	}
 	/*--------*/
 	.mem-banner .banner-text {
@@ -1235,12 +1226,6 @@ button, a, li {
 		margin-top: 20px;
 		height: 60%;
 	}
-	.header {
-		height: 15%;
-	}
-	.small-header {
-		height: 13%;
-	}
 	.header .menu-btn {
 		margin-top: 10%;
 		margin-left: 80%;
@@ -1403,7 +1388,7 @@ button, a, li {
 		height: 4900px;
 	}
 	.header {
-		height: 13%;
+		height: 120px;
 	}
 	.header .menu-btn {
 		margin-top: 8%;
@@ -1413,7 +1398,7 @@ button, a, li {
     	font-size: 30px;
 	}
 	.small-header {
-		height: 11%;
+		height: 100px;
 	}
 	.learn-more {
     	margin: 15% 25% 0 25%;
@@ -1623,20 +1608,28 @@ button, a, li {
 
 @media only screen and (min-width: 1440px) {
 	.header .title {
-		margin: 4% 0 auto 6%;
+		margin: 3% 0 auto 40px;
 	}
 	.header .small-title {
-		margin: 3.5% 0 auto 4%;
+		margin: 2.5% 0 auto 35px;
 	}
 	.header .btn-group {
-    	margin: 3.5% 3.23% 0.82% 0;
+    	margin: 3% 3.23% 0.82% 0;
 	}
 	.header .small-btn-group {
-    	margin-top: 3.0%;
+    	margin-top: 2.5%;
 	}
 	/*-------------*/
 	.about-us-body {
 		height: 4500px;
+	}
+	.certificates div {
+		height: 500px;
+	}
+	.image-popup img {
+    	width: auto;
+    	height: 100%;
+    	object-fit: cover;
 	}
 	/*------*/
 	.services-banner {
@@ -1669,12 +1662,21 @@ button, a, li {
 }
 @media only screen and (min-width: 1600px) {
 	.header .title {
-		margin: 3.5% 0 auto 4%;
+		margin: 3.5% 0 auto 40px;
+	}
+	.header .small-title {
+		margin: 3% 0 auto 40px;
 	}
 	/*-------------*/
 	.about-us-body {
 		height: 4800px;
 	}
+	.image-popup {
+    	margin-top: 7%;
+    }
+    .popup-info {
+    	margin-top: 7%;
+    }
 	/*---------*/
 	.services-body {
     	height: 2000px;
@@ -1684,7 +1686,7 @@ button, a, li {
 	}
 	/*--*/
 	.newcomer-banner img {
-    	margin-top: -400px;
+    	margin-top: -150px;
 	}
 	/*---------*/
 	.events-body {
@@ -1699,54 +1701,4 @@ button, a, li {
     	height: 1180px;
 	}
 
-}
-@media only screen and (min-width: 1900px) {
-	.header .small-title {
-		margin: 3% 0 auto 2%;
-	}
-	/*-------------*/
-	.about-us-body {
-		height: 5100px;
-	}
-
-	.services-body {
-    	height: 2200px;
-	}
-	/*--*/
-	.newcomer-banner img {
-    	margin-top: -550px;
-	}
-	/*---------*/
-	.events-body {
-    	height: 2750px;
-	}
-	/*--------*/
-	.gallery-body {
-	    height: 9900px;
-	}
-}
-@media only screen and (min-width: 2560px) {
-	.about-us-body {
-		height: 6100px;
-	}
-
-	.services-body {
-    	height: 2800px;
-	}
-	.services-banner {
-    	height: 500px;
-	}
-	.sub-banner {
-		height: 700px;
-	}
-	.newcomer-banner img {
-    	margin-top: -650px;
-	}
-	/*---------*/
-	.events-banner {
-    	height: 500px;
-	}
-	.events-body {
-    	height: 3200px;
-	}
 }
