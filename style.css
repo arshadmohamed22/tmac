@@ -1400,9 +1400,11 @@ button, a, li {
 	font-size: 55px;
 	line-height: 60px;
 }
-
+	.banner {
+		margin-top: 89px;
+	}
 	.header {
-		height: 120px;
+		height: 90px;
 	}
 	.header .menu-btn {
 		margin-top: 8%;
