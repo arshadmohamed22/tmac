@@ -10,7 +10,7 @@ html {
 
 }
 .home-body {
-	height: 2500px;
+	height: auto;
 }
 body {
 	max-width: 1600px;
@@ -183,7 +183,7 @@ button, a, li {
 	margin-top: 100px;
 	position: relative;
 	width: 100%;
-	height: 23%;
+	height: 575px;
 	overflow: hidden;
 }
 .banner img {
@@ -227,7 +227,7 @@ button, a, li {
 
 .description {
 	width: 100%;
-	height: 14%;
+	height: 350px;
 	overflow: hidden;
 	background-color: white;
 }
@@ -250,11 +250,14 @@ button, a, li {
 
 .upcoming-event {
 	width: 100%;
-	height: 20%;
+	height: 500px;
 	background-color: rgba(44, 249, 123, 1);
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0px 1px 4px #C2C2C2, 0px -1px 4px #C2C2C2;
+}
+.recent-event {
+	background-color: rgba(253, 181, 24, 1);
 }
 .upcoming-event h2 {
 	color: white;
@@ -325,10 +328,18 @@ button, a, li {
 	display: table;
 }
 /* ------------- GET INVOLVED ------------- */
-
+.home-awards {
+	padding: 2em 4em;
+	height: auto;	
+	text-align: center; 
+}
+.home-awards a {
+	color: #A3749E;
+	font-size: 25px;
+}
 .get-involved {
 	width: 100%;
-	height: 17%;
+	height: 425px;
 	z-index: -1;
 	padding: 3% 0;
 	text-align: center;
@@ -371,7 +382,7 @@ button, a, li {
 
 .businesses {
 	width: 100%;
-	height: 15%;
+	height: 550px;
 	overflow: hidden;
 	background-color: white;
 	position: relative;
@@ -385,7 +396,7 @@ button, a, li {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 }
-.business-text span {
+.business-text a {
 	color: #148A43;
 }
 .businesses img {
@@ -414,6 +425,9 @@ button, a, li {
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
+}
+.footer-text a {
+	color: #FFFFFF;
 }
 .footer-text p {
 	font-family: Lato;
@@ -468,7 +482,7 @@ button, a, li {
 	color: #416B9C;
 }
 .board {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -518,9 +532,11 @@ button, a, li {
 	width: 31%;
 	height: 430px;
 	float: left;
+	margin: 2% 1%;
+}
+.bordered div {
 	border: 1px solid #dFdFdF;
 	border-radius: 5px;
-	margin: 2% 1%;
 }
 .certificates img {
 	height: auto;
@@ -594,15 +610,20 @@ button, a, li {
 	height: 40%;
 }
 .sub-banner-text {
-	text-align: left;
-	padding: 8%;
+	padding-top: 10em;
+	text-align: center;
 }
 .sub-banner-text h1 {
 	font-weight: 1;
 	font-family: 'Raleway', sans-serif;
 }
 .sub-text-div {
-	width: 30%;
+	width: 100%;
+	text-align: center;
+}
+.sub-text-div p {
+	font-size: 25px;
+	font-style: italic;
 }
 .newcomer-banner img {
 	margin-top: -75px;
@@ -640,7 +661,7 @@ button, a, li {
 }
 
 .youth img {
-	margin-top: -60%;
+	margin-top: -5%;
 }
 .women img {
 	margin-top: -5%;
@@ -756,9 +777,9 @@ button, a, li {
 	height: 200px;
 }
 .event-calendar {
-	margin-top: -100px;
+	margin-top: -80px;
 	height: auto;
-	padding: 0 5% 10% 5%;
+	padding: 5% 5% 10% 5%;
 	background-color: white;
 }
 .month {
@@ -1141,15 +1162,19 @@ button, a, li {
 	}
 	.event-left {
 		margin-left: 4%;
-		padding: 0;
+		padding: 2em 0em;
+	}
+	.event-text {
+		width: 90%;
 	}
 	.event-right {
+		display: none;
 		height: 80%;
 		margin: 4% 8% 0 0;
 		padding-right: 10%;
 	}
 	.businesses {
-		height: 12%;
+		height: 540px;
 	}
 	.footer {
 		height: 320px;
@@ -1207,20 +1232,16 @@ button, a, li {
 }
 @media only screen and (max-width: 600px) {
 	h1 {
-	font-size: 60px;
-	line-height: 65px;
-}
-p {
-	font-size: 21px;
-	line-height: 26px;
-}
-
-button, a, li {
-	font-size: 20px;
-	line-height: 25px;
-}
-	.home-body {
-		height: 5000px;
+		font-size: 60px;
+		line-height: 65px;
+	}
+	p {
+		font-size: 21px;
+		line-height: 26px;
+	}	
+	button, a, li {
+		font-size: 20px;
+		line-height: 25px;
 	}
 	.logo {
 		margin-top: 20px;
@@ -1245,7 +1266,7 @@ button, a, li {
 		width: 40%;
 	}
 	.home-description {
-		height: 10%;
+		height: auto;
 	}
 	.home-text-body {
 		width: 90%;
@@ -1260,11 +1281,6 @@ button, a, li {
 		width: 100%;
 		margin-bottom: 40px;
 	}
-	.event-right {
-		float: none;
-		height: 50%;
-		margin: 4% 15%;
-	}
 	.event-left {
 		margin: 6% 10%;
 	}
@@ -1272,7 +1288,7 @@ button, a, li {
 		width: 100%;
 	}
 	.businesses {
-		height: 10%;
+		height: 600px;
 	}
 	.businesses img {
     	width: auto;
@@ -1618,6 +1634,9 @@ button, a, li {
 	}
 	.header .small-btn-group {
     	margin-top: 2.5%;
+	}
+	.banner {
+		height: 700px;
 	}
 	/*-------------*/
 	.about-us-body {
