@@ -678,10 +678,10 @@ button, a, li {
 
 /* ---------------------- Contact Us ------------------------ */
 .contact-body {
-	height: 1080px;
+	height: auto;
 }
 .contact-banner {
-	height: 40%;
+    height: 510px;
 }
 .contact-banner img {
 	margin-top: -10%;
@@ -696,6 +696,9 @@ button, a, li {
 	padding-bottom: 2%;
 	border-bottom: 1px solid grey;
 
+}
+.contact-description {
+	height: 550px;
 }
 
 .contact-left li {
@@ -1096,17 +1099,24 @@ button, a, li {
     	height: 350px;
 	}
 	/*-------*/
-	.contact-banner {
-    	margin-top: 15%;
-	}
 	.contact-left ul {
 	    margin-left: 5%;
     	width: 30%;
     }
 }
 @media only screen and (max-width: 800px) {
+	.header {
+		height: 90px;
+	}
+	.small-header {
+		height: 80px;
+	}
+	.banner {
+		margin-top: 85px;
+	}
+	
 	.header .logo {
-		margin-top: 15px;
+		margin-top: 8px;
 	}
 	.header .btn-group {
     	display: none;
@@ -1115,7 +1125,7 @@ button, a, li {
 		display: none;
 	}
 	.header .menu-btn {
-		margin-top: 7%;
+		margin-top: 30px;
 		font-size: 40px;
 		text-decoration: none;
 		color: #5F5F5F;
@@ -1127,8 +1137,8 @@ button, a, li {
 		transition: all 0.2s;
 	}
 	.small-header .menu-btn {
-		margin-top: 5%;
-		font-size: 35px;
+		margin-top: 23px;
+    	font-size: 30px;
 	}
 	.show-menu {
 		display: block;
@@ -1201,11 +1211,23 @@ button, a, li {
 	.sub-banner {
     	height: 420px;
 	}
+	.sub-banner img {
+    	height: 100%;
+	}
 	.newcomer-banner img {
 	    margin-top: -80px;
 	}
 	.cultural img {
-   	 margin-top: 5%;
+    	margin-top: 0%;
+	}
+	.sports-banner img {
+    	margin-top: 0%;
+	}
+	.youth img {
+    	margin-top: 0%;
+	}
+	.women img {
+    	margin-top: 0%;
 	}
 	/*-----*/
 	.events-banner {
@@ -1227,7 +1249,7 @@ button, a, li {
     	height: 350px;
 	}
 	.contact-description {
-		height: 400px;
+		height: 650px;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -1242,14 +1264,6 @@ button, a, li {
 	button, a, li {
 		font-size: 20px;
 		line-height: 25px;
-	}
-	.logo {
-		margin-top: 20px;
-		height: 60%;
-	}
-	.header .menu-btn {
-		margin-top: 10%;
-		margin-left: 80%;
 	}
 	.home-banner {
 		height: 12%;
@@ -1350,7 +1364,7 @@ button, a, li {
 	    font-size: 50px;
 	}
 	.sub-text-div {
-    	width: 60%;
+    	width: 100%;
 	}
 	.sub-desc {
 		margin: 0;
@@ -1366,7 +1380,15 @@ button, a, li {
 	}
 	.newcomer-banner img {
 	    margin-top: 0px;
+	    margin-left: -200px;
 	}
+	.sports-banner img {
+		margin-left: -135px;
+	}
+	.women img {
+    	margin-top: 0%;
+	}
+	
 	/*------*/
 	.events-description {
     	height: 450px;
@@ -1400,22 +1422,7 @@ button, a, li {
 	font-size: 55px;
 	line-height: 60px;
 }
-	.banner {
-		margin-top: 89px;
-	}
-	.header {
-		height: 90px;
-	}
-	.header .menu-btn {
-		margin-top: 8%;
-	}
-	.small-header .menu-btn {
-		margin-top: 8%;
-    	font-size: 30px;
-	}
-	.small-header {
-		height: 100px;
-	}
+	
 	.learn-more {
     	margin: 15% 25% 0 25%;
     	width: 50%;
@@ -1474,6 +1481,10 @@ button, a, li {
 	}
 	.sub-body {
     	height: 1800px;
+	}
+	.women img {
+    	margin-top: 0%;
+    	margin-left: -370px;
 	}
 	/*----------*/
 	.events-banner img {
@@ -1639,6 +1650,9 @@ button, a, li {
 		height: 700px;
 	}
 	/*-------------*/
+	.about-banner {
+    	height: 600px;
+	}
 	.about-us-body {
 		height: 4500px;
 	}
@@ -1678,6 +1692,10 @@ button, a, li {
 	.gallery-body {
     	height: 7900px;
 	}
+	/*-----------*/
+	.contact-banner {
+    	height: 510px;
+	}
 }
 @media only screen and (min-width: 1600px) {
 	.header .title {
@@ -1707,6 +1725,12 @@ button, a, li {
 	.newcomer-banner img {
     	margin-top: -150px;
 	}
+	.cultural {
+		height: 600px;
+	}
+	.cultural .services-banner-text {
+    	padding-top: 14%;
+	}
 	/*---------*/
 	.events-body {
     	height: 2650px;
@@ -1717,7 +1741,7 @@ button, a, li {
 	}
 	/*-------*/
 	.contact-body {
-    	height: 1180px;
+    	height: auto;
 	}
 
 }
