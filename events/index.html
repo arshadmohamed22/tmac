@@ -68,7 +68,10 @@
 					<!-- EDIT EVENT INFO HERE -->
 					<p><b>Location:</b> Scarborough Civic Centre</p>
 					<p>Event description currently unavailable</p><!-- EDIT EVENT LINK IN "href=" HERE -->
-					<a ><b>Register Now!</b></a>
+					<a id="eventbrite-widget-modal-trigger-55317145070"><b>Register Now!</b></a>
+					<!-- You can customize this button any way you like 
+					<button id="eventbrite-widget-modal-trigger-55317145070" type="button">Buy Tickets</button>
+					<noscript></a>Buy Tickets on Eventbrite</noscript>-->
 					</div>
 				</div>
 			</div>
@@ -162,6 +165,25 @@
     		</div>
   		</div>
 	</div>
+
+	<!-- Noscript content for added SEO -->
+	<noscript><a href="https://www.eventbrite.ca/e/tmac-presents-tamil-heritage-month-convention-2019-tickets-55317145070"	 rel="noopener noreferrer" target="_blank"></noscript>
+	
+	<script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+	
+	<script type="text/javascript">
+	    var exampleCallback = function() {
+	        console.log('Order complete!');
+	    };
+	
+	    window.EBWidgets.createWidget({
+	        widgetType: 'checkout',
+	        eventId: '55317145070',
+	        modal: true,
+	        modalTriggerElementId: 'eventbrite-widget-modal-trigger-55317145070',
+	        onOrderComplete: exampleCallback
+	    });
+	</script>
 
 	<script defer type="text/javascript" src="./events.js"></script>
 </body>
