@@ -4,11 +4,13 @@ $(document).ready(function() {
 		if ($(window).scrollTop() > 10) {
 			$('#header').addClass('small-header');
 			$('#title').addClass('small-title');
+			$('#mobile-title').addClass('small-mobile-title');
 			$('#header-box').addClass('transparant-header');
 			$('#btn-group').addClass('small-btn-group');
 		} else {
 			$('#header').removeClass('small-header');
 			$('#title').removeClass('small-title');
+			$('#mobile-title').removeClass('small-mobile-title');
 			$('#header-box').removeClass('transparant-header');
 			$('#btn-group').removeClass('small-btn-group');
 		}

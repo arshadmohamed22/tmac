@@ -102,6 +102,17 @@ button, a, li {
 	transition: all 0.2s;
 	display: inline-flex;
 }
+.mobile-title {
+	margin: 3% 0 auto 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1F2D3D;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    display: none;
+}
+
 .small-title {
 	margin: 2.4% 0 auto 35px;
 	font-size: 18px;
@@ -763,12 +774,18 @@ button, a, li {
 	height: 600px;
 }
 .mem-banner {
-	height: 100%;
+	height: 700px;
 }
 .mem-banner img {
-	margin-top: -10%;
+	margin-top: -25%;
 }
-
+.mem-banner a {
+	font-size: 25px;
+	color: #FCB518;
+}
+.mem-banner a:hover {
+	color: #FFFFFF;
+}
 /* ------------------------ Events -------------------------- */
 .events-body {
 	height: 2450px;
@@ -933,7 +950,7 @@ button, a, li {
 
 /* ------------------------ Gallery -------------------------- */
 .gallery-body {
-	height: 7400px; /* ADD 700px */
+	height: auto; /* ADD 700px */
 }
 .gallery-banner {
 	height: 300px;
@@ -976,7 +993,7 @@ button, a, li {
 }
 .gallery {
 	margin-top: -5%;
-	padding: 5% 10% 5% 10%;
+	padding: 5% 10% 30% 10%;
 	height: auto;
 	background-color: white;
 }
@@ -1086,7 +1103,8 @@ button, a, li {
 	}
 	/*--------*/
 	.mem-banner .banner-text {
-		padding-top: 25%;
+		padding: 12% 2% 2% 2%;
+		width: 96%;
 	}
 	/*--------*/
 	.events-banner {
@@ -1094,10 +1112,7 @@ button, a, li {
 	}
 	/*--------*/
 	.gallery-body {
-	    height: 6100px;
-	}
-	.gallery-banner {
-		margin-top: 15%;
+	    height: auto;
 	}
 	.gallery-description {
     	height: 350px;
@@ -1118,7 +1133,12 @@ button, a, li {
 	.banner {
 		margin-top: 85px;
 	}
-	
+	.header .mobile-title {
+		display: inline-flex;
+	}
+	.header .small-mobile-title {
+		font-size: 16px;
+	}
 	.header .logo {
 		margin-top: 8px;
 	}
@@ -1129,7 +1149,7 @@ button, a, li {
 		display: none;
 	}
 	.header .menu-btn {
-		margin-top: 30px;
+		margin-top: -35px;
 		font-size: 40px;
 		text-decoration: none;
 		color: #5F5F5F;
@@ -1141,7 +1161,7 @@ button, a, li {
 		transition: all 0.2s;
 	}
 	.small-header .menu-btn {
-		margin-top: 23px;
+		margin-top: -35px;
     	font-size: 30px;
 	}
 	.show-menu {
@@ -1246,7 +1266,10 @@ button, a, li {
 	/*--------*/
 	
 	.gallery-body {
-    	height: 5100px;
+    	height: auto;
+	}
+	.gallery {
+		padding: 5% 10% 45% 10%;
 	}
 	/*------*/
 	.contact-banner {
@@ -1406,13 +1429,13 @@ button, a, li {
 	}
 	/*------*/
 	.gallery-body {
-	    height: 23600px;
+	    height: auto;
 	}
 	.gallery-description {
     	height: 450px;
 	}
 	.gallery {
-		padding: 5% 5%;
+		padding: 5% 5% 80%;
 	}
 	.column {
     	-ms-flex: 100%;
@@ -1423,16 +1446,37 @@ button, a, li {
 }
 @media only screen and (max-width: 425px) {
 	h1 {
-	font-size: 55px;
-	line-height: 60px;
-}
-	
+		font-size: 55px;
+		line-height: 60px;
+	}
+	.header .mobile-title {
+		margin: 20px 0 auto 45px;
+		font-size: 16px;
+	}
+	.header .small-mobile-title {
+		font-size: 15px;
+	}
 	.learn-more {
     	margin: 15% 25% 0 25%;
     	width: 50%;
 	}
 	.home-description {
     	height: 12.5%;
+	}
+	.learn-more button {
+		width: 75%;
+	}
+	.home-banner {
+		background: url(./assets/images/home-banner.jpg) repeat 0 0;
+		-webkit-animation: slide 20s linear infinite;
+	}
+	@-webkit-keyframes slide {
+    	from { background-position: 0 0; }
+    	to { background-position: -1200px 0; }
+	}
+	.home-banner img {
+		opacity: 0;
+		z-index: -999;
 	}
 	.upcoming-event {
 		height: 23%;
@@ -1506,8 +1550,11 @@ button, a, li {
 		font-size: 18px;
 	}
 	/*-------*/
+	.gallery {
+    	padding: 5% 5% 130%;
+	}
 	.gallery-body {
-    	height: 17300px;
+    	height: auto;
 	}
 	.gallery-description {
     	height: 690px;
@@ -1524,7 +1571,11 @@ button, a, li {
 	}
 	.gallery-banner img {
 		margin-left: -15%;
-   		margin-top: 5%;
+   		margin-top: 0;
+	}
+	/*--------*/
+	.mem-banner img {
+    	margin-top: -10%;
 	}
 	/*--------*/
 	.contact-body {
@@ -1628,7 +1679,7 @@ button, a, li {
 	}
 	/*----*/
 	.gallery-body {
-    	height: 15700px;
+    	height: auto;
 	}
 }
 
@@ -1700,7 +1751,7 @@ button, a, li {
     	height: 400px;
 	}
 	.gallery-body {
-    	height: 7900px;
+    	height: auto;
 	}
 	/*-----------*/
 	.contact-banner {
@@ -1747,7 +1798,7 @@ button, a, li {
 	}
 	/*-------*/
 	.gallery-body {
-    	height: 8900px;
+    	height: auto;
 	}
 	/*-------*/
 	.contact-body {
