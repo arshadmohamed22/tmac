@@ -134,7 +134,7 @@ button, a, li {
 }
 .menu-btn {
 	display: none;
-	margin: 4% 0 0 85%;
+	margin: 4% 0 0 81%;
 	position: absolute;
 	width: 8%;
 	height: auto;
@@ -1450,11 +1450,12 @@ button, a, li {
 		line-height: 60px;
 	}
 	.header .mobile-title {
-		margin: 20px 0 auto 45px;
+		margin: 20px 0 auto 50px;
 		font-size: 16px;
 	}
 	.header .small-mobile-title {
 		font-size: 15px;
+		margin-left: 45px;
 	}
 	.learn-more {
     	margin: 15% 25% 0 25%;
@@ -1468,11 +1469,11 @@ button, a, li {
 	}
 	.home-banner {
 		background: url(./assets/images/home-banner.jpg) repeat 0 0;
-		-webkit-animation: slide 20s linear infinite;
+		-webkit-animation: slide 35s linear infinite;
 	}
 	@-webkit-keyframes slide {
     	from { background-position: 0 0; }
-    	to { background-position: -1200px 0; }
+    	to { background-position: -800px 0; }
 	}
 	.home-banner img {
 		opacity: 0;
