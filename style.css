@@ -458,7 +458,7 @@ button, a, li {
 
 /* --------------------------------- ABOUT US PAGE ----------------------------------*/
 .about-us-body {
-	height: 4400px;
+	height: 4800px;
 	background-color: #f5f7fa;
 }
 .about {
@@ -515,7 +515,8 @@ button, a, li {
 .board img {
 	margin-top: 10px;
 	height: auto;
-	width: 50%;
+	width: 60%;
+	border-radius: 5px;
 }
 .board span {
 	font-size: 30px;
@@ -1082,7 +1083,7 @@ button, a, li {
 		height: 400px;
 	}
 	.about-us-body {
-		height: 3900px;
+		height: 4800px;
 	}
 	.certificates div {
 		height: 400px;
@@ -1218,7 +1219,7 @@ button, a, li {
 	}
 	/*-----------*/
 	.about-us-body {
-		height: 5500px;
+		height: 6000px;
 	}
 	.board div {
 		width: 40%;
@@ -1340,17 +1341,20 @@ button, a, li {
 	}
 	/*------*/
 	.about-us-body {
-		height: 9700px;
+		height: 9900px;
 	}
 	.about-banner{
 		margin-top: 25%;
 		height: 300px;
 	}
 	.board div {
-		width: 100%;
+    	width: 98%;
+    	margin-left: 1%;
 	}
 	.certificates div {
 		width: 100%;
+		margin-left: 0;
+		border: none;
 	}
 	.image-popup {
     	background-color: white;
@@ -1362,7 +1366,7 @@ button, a, li {
 	}
 	.image-popup img {
 		margin: 0 auto;
-    	width: auto;
+    	width: 100%;
     	height: 100%;
     	object-fit: cover;
 	}
@@ -1497,7 +1501,7 @@ button, a, li {
 	} 
 	/*-------- about --------*/
 	.about-us-body {
-    	height: 9500px;
+    	height: 9900px;
 	}
 	.about {
 		width: 100%;
@@ -1516,6 +1520,9 @@ button, a, li {
 		margin-top: 0;
 		height: 400px;
 		width: auto;
+	}
+	.awards {
+		margin-top: 15%;
 	}
 	/*-----------*/
 	.services-body p {
@@ -1664,9 +1671,7 @@ button, a, li {
 		height: 33%;
 	}
 	/*-------- about --------*/
-	.about-us-body {
-    	height: 9000px;
-	}
+	
 	/*------*/
 	.mem-body {
     	height: 800px;
@@ -1719,7 +1724,7 @@ button, a, li {
     	height: 600px;
 	}
 	.about-us-body {
-		height: 4500px;
+		height: 4800px;
 	}
 	.certificates div {
 		height: 500px;
