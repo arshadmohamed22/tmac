@@ -17,7 +17,7 @@
 
 	btn1.onclick = function() {
 		popup.style.display = "block";
-		document.getElementById("image-popup").innerHTML = '<img src="../assets/icons/person.png">';
+		document.getElementById("image-popup").innerHTML = '<img src="../assets/about/iqbal.jpg">';
 		document.getElementById("popup-info").innerHTML = 
 			'<h2>Iqbal Ali - President</h2> <hr>' +
 			'<!-- EDIT DESCRIPTION HERE -->' +
