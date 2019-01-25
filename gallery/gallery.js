@@ -9,6 +9,10 @@ $(document).ready(function(){
 	var event8 = $("#event8").offset().top - 100;
 	var event9 = $("#event9").offset().top - 100;
 	var event10 = $("#event10").offset().top - 100;
+	var event11 = $("#event11").offset().top - 100;
+	var event12 = $("#event12").offset().top - 100;
+	var event13 = $("#event13").offset().top - 100;
+
 	$("#e1").click(function() {
 		$('html, body').animate({
 			scrollTop: event1
@@ -57,6 +61,21 @@ $(document).ready(function(){
 	$("#e10").click(function() {
 		$('html, body').animate({
 			scrollTop: event10
+		}, 1000);
+	});
+	$("#e11").click(function() {
+		$('html, body').animate({
+			scrollTop: event11
+		}, 1000);
+	});
+	$("#e12").click(function() {
+		$('html, body').animate({
+			scrollTop: event12
+		}, 1000);
+	});
+	$("#e13").click(function() {
+		$('html, body').animate({
+			scrollTop: event13
 		}, 1000);
 	});
 
