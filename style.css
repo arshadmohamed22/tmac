@@ -1536,6 +1536,9 @@ button, a, li {
     	margin-left: -370px;
 	}
 	/*----------*/
+	.event-calendar {
+    	margin-top: 0px;
+    }
 	.events-banner img {
 	    width: auto;
 	    height: 100%;
